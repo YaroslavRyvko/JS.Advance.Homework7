@@ -1,0 +1,158 @@
+header {
+    margin: 15px auto;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+main {
+    margin: 45px auto;
+    width: 64%;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+
+.box {
+    width: 49%;
+    position: relative;
+}
+
+.searchInput {
+    width: 100%;
+    cursor: default;
+}
+
+.resetBtn {
+    position: absolute;
+    top: 6px;
+    right: 8px;
+    display: none;
+}
+
+.btn-close:focus{
+    box-shadow: none;
+}
+
+.searchBtn {
+    width: 49%;
+}
+
+.card {
+    height: 490px;
+    width: 250px;
+    margin-top: 30px;
+    animation-name: anime;
+    animation-duration: 0.4s;
+    animation-timing-function: ease-in;
+}
+
+img {
+    box-shadow: 0px 0px 10px 2px;
+    height: 300px;
+}
+
+.title {
+    width: 100%;
+    min-height: 60px;
+    background-color: lightgrey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.card-body {
+    padding: 0px 0px;
+    text-align: center;
+    position: relative;
+}
+
+p {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.detailsBtn {
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+}
+
+@keyframes anime {
+    0% {
+        opacity: 0.20;
+    }
+
+    25% {
+        opacity: 0.40;
+    }
+
+    50% {
+        opacity: 0.60;
+    }
+
+    75% {
+        opacity: 0.80;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.modal-content {
+    width: 1200px;
+    height: 700px;
+    position: absolute;
+    left: 50%;
+    top: 400px;
+    transform: translate(-50%, -50%);
+}
+
+.modal-body {
+    display: flex;
+    padding: 20px 28px;
+
+}
+
+.container {
+    border-radius: 4px;
+    box-sizing: border-box;
+    border: 1px solid rgb(223, 219, 219);
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.detailsImage {
+    height: 100%;
+    width: 440px;
+    background-size: cover;
+    background-position: center;
+}
+
+.detailsInfo {
+    width: 666px;
+}
+
+.detailsTitle {
+    height: 65px;
+
+    background-color: lightgrey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 27px;
+    font-weight: 600;
+}
+
+.detailsText p {
+    margin-top: 12px;
+}
+
+.style_p {
+    color: rgb(133, 133, 133);
+}
